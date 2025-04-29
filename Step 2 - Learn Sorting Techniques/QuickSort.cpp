@@ -1,7 +1,4 @@
 #include<bits/stdc++.h>
-#include<iostream>
-#include <vector>
-
 using namespace std;
 
 // PICK PIVOT AND PLACE IT IN CORRECT POSITION
