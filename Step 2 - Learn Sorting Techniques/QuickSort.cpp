@@ -10,39 +10,12 @@ using namespace std;
 
 int findPivot(vector<int> &arr, int low , int high){
 
-    int pivot = arr[low];
 
-    int i = low;
-    int j = high;
-
-    while(i<j){
-        while(arr[i]<=pivot && i<high){
-            i++;
-        }
-
-        while(arr[j]>pivot && j>low){
-            j--;
-        }
-
-        if (i < j)swap(arr[i], arr[j]);
-    }
-    swap(arr[low], arr[j]);
-
-    return j;
 
 }
 
 void quick_sort(vector<int> &arr, int low , int high) {
-  // quick sort
 
- if(low < high){
-
-    int partitionIndex = findPivot(arr,low,high);
-
-    quick_sort(arr,low,partitionIndex-1);
-    quick_sort(arr,partitionIndex+1,high);
-
- } 
   
 
 
