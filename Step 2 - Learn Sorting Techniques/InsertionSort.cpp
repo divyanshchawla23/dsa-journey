@@ -35,6 +35,15 @@ int main()
     cout << arr[i] << " ";
   }
   cout << "\n";
+
   insertion_sort(arr, n);
+
+  cout << "After insertion sort: " << "\n";
+  for (int i = 0; i < n; i++)
+  {
+    cout << arr[i] << " ";
+  }
+  cout << "\n";
+  
   return 0;
 }

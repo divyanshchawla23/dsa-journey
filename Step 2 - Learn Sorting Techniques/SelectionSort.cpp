@@ -34,6 +34,7 @@ int main()
     cout << arr[i] << " ";
   }
   cout << "\n";
+  
   selection_sort(arr, n);
 
   cout << "After selection sort: " << "\n";

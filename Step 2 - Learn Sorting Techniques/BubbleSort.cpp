@@ -32,6 +32,7 @@ int main()
     cout << arr[i] << " ";
   }
   cout << "\n";
+  
   bubble_sort(arr, n);
 
   cout << "After bubble sort: " << "\n";
@@ -39,5 +40,6 @@ int main()
   {
     cout << arr[i] << " ";
   }
+  
   return 0;
 }

@@ -21,27 +21,25 @@ void quick_sort(vector<int> &arr, int low , int high) {
 
 }
 
-int main() {
+int main()
+{
+  int arr[] = {13, 46, 24, 52, 20, 9};
 
-    vector<int> arr;
-    arr.push_back(3);
-    arr.push_back(2);
-    arr.push_back(4);
-    arr.push_back(1);
-    arr.push_back(5);
+  int n = sizeof(arr) / sizeof(arr[0]);
+  cout << "Before quick sort: " << "\n";
+  for (int i = 0; i < n; i++)
+  {
+    cout << arr[i] << " ";
+  }
+  cout << "\n";
   
-    int n = 5;
+  quick_sort(arr, n , 0, n-1);
 
-    cout << "Before Sorting Array: " << endl;
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " "  ;
-    }
-    cout << endl;
-    quick_sort(arr, 0, n - 1);
-    cout << "After Sorting Array: " << endl;
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " "  ;
-    }
-    cout << endl;
-    return 0 ;
+  cout << "After quick sort: " << "\n";
+  for (int i = 0; i < n; i++)
+  {
+    cout << arr[i] << " ";
+  }
+  
+  return 0;
 }
