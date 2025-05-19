@@ -5,8 +5,9 @@ class Solution {
   public:
     // Function to find sum of weights of edges of the Minimum Spanning Tree.
     int spanningTree(int V, vector<vector<int>> adj[]) {
-        // code here
+        
         vector<int> vis(V,0);
+
         //{{wt,node},parent};
         priority_queue<pair<pair<int,int>,int>, 
         vector<pair<pair<int,int>,int>>,
@@ -22,7 +23,7 @@ class Solution {
             int parent = pq.top().second;
             pq.pop();
             
-            if(vis[node]) continue;
+            if(vis[node]) continue;             // if it is visited, it is the part of our MST, so continue;
             
             vis[node]= 1;
             ans+= wt;
