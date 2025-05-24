@@ -26,11 +26,12 @@ public:
             int parent = pq.top().second;
             pq.pop();
 
-            if (vis[node])continue;     // if it is visited, it is the part of our MST, so continue;
+            if (vis[node]) continue;     // if it is visited, it is the part of our MST, so continue;
 
             vis[node] = 1;
 
             if (parent != -1) v.push_back({{nd, parent}, wt});  // this line is for storing the tree edges
+
             ans += wt;
 
             for (auto it : adj[node])
