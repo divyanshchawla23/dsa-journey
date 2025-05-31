@@ -21,7 +21,7 @@ private:
             if (!vis[it])
             {
                 dfs(it, node, vis, tm, lowtm, adj, mark);
-                lowtm[node] = min(lowtm[it], tm[node]);
+                lowtm[node] = min(lowtm[it], lowtm[node]);
                 if (lowtm[it] >= tm[node] && parent != -1)
                 {
                     mark[node] = 1;
