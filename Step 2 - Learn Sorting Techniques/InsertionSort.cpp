@@ -13,7 +13,7 @@ void insertion_sort(int arr[], int n)
   {
     int j = i;
 
-    while (j > 0 && arr[j] > arr[j - 1])
+    while (j > 0 && arr[j] < arr[j - 1])
     {
       swap(arr[j], arr[j - 1]);
       j--;
